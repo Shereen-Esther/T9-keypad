@@ -1,0 +1,27 @@
+button{
+    height: 7rem;
+    width: 7rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+}
+button:hover{
+    background-color: brown;
+}
+div{
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+button{
+        margin-top: 1rem;
+        margin-right: 1rem;
+}
+.small-textbox{
+    border-radius: 10px;
+    padding: 1rem;
+    padding-right:12.5rem;
+}
+.square{
+    display: inline-block;
+}

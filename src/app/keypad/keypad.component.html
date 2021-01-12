@@ -1,0 +1,42 @@
+<script type="text/javascript">
+    function start()
+        {
+          let counter = 3;
+          setInterval(function() {
+            counter--;
+            console.log("counter:",counter);
+            if (counter === 0) {
+                count2=0;
+                clearInterval(counter);
+            }
+          }, 1000);
+        }
+</script>
+<div class="contact">
+    <div id="cont" routerLink="keypad"></div>
+</div>
+<div>
+    <input type="text" class="small-textbox" [(ngModel)]="b">
+</div>
+
+<div class="temp">
+    <!-- <span id="count">3</span> -->
+    <button type="submit" class="square" (click)="onItemSelector(1)"><b>1</b></button>
+    <button class="square" type="submit" (click)="onItemSelector(2)" (click)="start()"><b>2</b><br><b>abc</b></button>
+    <button class="square" type="submit" (click)="onItemSelector(3)" (click)="start()"><b>3</b><br><b>def</b></button>
+</div>
+<div class="temp">
+    <button class="square" type="submit" (click)="onItemSelector(4)" (click)="start()"><b>4</b><br><b>ghi</b></button>
+    <button class="square" type="submit" (click)="onItemSelector(5)" (click)="start()"><b>5</b><br><b>jkl</b></button>
+    <button class="square" type="submit" (click)="onItemSelector(6)" (click)="start()"><b>6</b><br><b>mno</b></button>
+</div>
+<div class="temp">
+    <button class="square" type="submit" (click)="onItemSelector(7)" (click)="start()"><b>7</b><br><b>pqrs</b></button>
+    <button class="square" type="submit" (click)="onItemSelector(8)" (click)="start()"><b>8</b><br><b>tuv</b></button>
+    <button class="square" type="submit" (click)="onItemSelector(9)" (click)="start()"><b>9</b><br><b>wxyz</b></button>
+</div>
+<div class="temp">
+    <button class="square" type="submit" (click)="onItemSelector('space')"><b>space</b><br></button>
+    <button class="square" type="submit" (click)="onItemSelector(0)"><b>0</b><br></button>
+    <button class="square" type="submit" (click)="onItemSelector('del')"><b>delete</b></button>
+</div>
